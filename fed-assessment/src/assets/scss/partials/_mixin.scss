@@ -1,0 +1,21 @@
+@mixin flex-center($direction) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin btn($bg-color, $color) {
+  padding: 0.5rem;
+  border-radius: 10px;
+  background-color: $bg-color;
+  color: $color;
+  display: flex;
+  justify-content: end;
+  &:hover {
+    background-color: $color;
+    color: $bg-color;
+    border: 1px solid $color;
+    transition: all 200ms ease-in-out;
+  }
+}
